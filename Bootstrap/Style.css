@@ -1,0 +1,74 @@
+.navbar {
+    padding: 2rem;
+    background: linear-gradient(rgba(57, 202, 50, 0.767), rgba(6, 144, 87, 0.735));
+    border-bottom: 1px solid #fff;
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  
+  @keyframes parpadeo {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+  }
+  
+  .navbar .nav-link {
+    animation: parpadeo 1s infinite ease-in-out;
+  }
+  
+  .navbar .nav-link.active,
+  .navbar .nav-link:hover {
+    color: #c0c0c0;
+    text-decoration: underline;
+  }
+  
+  /* Alineación horizontal del logo y elementos de navegación */
+  .navbar-brand, .navbar-nav {
+    align-items: center;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-nav {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .nav-item {
+      margin-left: 0;
+    }
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
